@@ -9,8 +9,7 @@ public class Ushtrimi_1 {
         String username = user.nextLine();
         //e validoni a eshet i nxanun username
         System.out.println("Username i zgjedhur eshte: " + username);
-        Test t = new Test(1,"naim");
-        Test t2 = t;
+
 
     }
 }
