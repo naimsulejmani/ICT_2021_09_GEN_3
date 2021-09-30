@@ -1,7 +1,7 @@
 package ict.kosovo.growth.basic.ora_5;
 
 import java.util.Scanner;
-
+//calculator + API Call ne Android
 public class DoWhileExample {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
