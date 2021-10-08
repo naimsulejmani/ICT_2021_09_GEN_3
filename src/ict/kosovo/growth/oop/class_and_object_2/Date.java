@@ -3,6 +3,26 @@ package ict.kosovo.growth.oop.class_and_object_2;
 public class Date {
     private int day, month, year;
 
+    //default
+    public Date() {
+
+    }
+
+    public Date(int day, int month, int year) {
+        if(isValid(day,month,year)) {
+            setDay(day);
+            setMonth(month);
+            setYear(year);
+        }
+    }
+
+    private boolean isValid(int day, int month, int year) {
+        boolean isValid = true;
+        //TODO: duhet me validu secilin argument se a eshte ne domain te vet, dhe a guxon
+        // me qene ne ate kombinim
+        return isValid;
+    }
+
     public int getDay() {
         return day;
     }
