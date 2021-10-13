@@ -5,7 +5,7 @@ public class Bird extends Object {
     //variablat instance
     private String color;
     private String movement;
-    private String food;
+    protected String food;
 
     public Bird(String color, String movement, String food) {
         super();//nese na nuk e shkruajm -> compajlleri e shkruan

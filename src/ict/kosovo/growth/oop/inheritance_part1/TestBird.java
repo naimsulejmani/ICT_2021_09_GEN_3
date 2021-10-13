@@ -10,5 +10,22 @@ public class TestBird {
         System.out.println("--------------------------");
         Goose goose  = new Goose("white","walking","fish");
         System.out.println(goose);
+        System.out.println(goose.getFood());
+
+        /*
+        Legal call
+         */
+        Bird b1 = new Goose("white","test","A");
+        WalkingBird b2 = new Goose("test","test","test");
+
+        /*
+        Jo legale
+         */
+//        Goose g1 = new Bird("a","b","c");
+//        Goose g2 = new WalkingBird("c","c","c");
+
+        Bird wBird = new WalkingBird("A","B","C");
+            System.out.println(wBird.toString());
+
     }
 }
