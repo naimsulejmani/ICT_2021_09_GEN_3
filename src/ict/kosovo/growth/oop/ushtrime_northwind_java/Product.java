@@ -1,7 +1,7 @@
 package ict.kosovo.growth.oop.ushtrime_northwind_java;
 
 import java.util.ArrayList;
-
+//Mappim Table-Class (Mapper
 public class Product {
     private int id;
     private String name;
