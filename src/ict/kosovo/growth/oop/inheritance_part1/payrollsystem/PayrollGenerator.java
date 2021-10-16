@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class PayrollGenerator {
+public class PayrollGenerator extends Object {
     public static void main(String[] args) {
         ArrayList<Employee> employees = new ArrayList<>();
 
