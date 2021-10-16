@@ -1,5 +1,7 @@
 package ict.kosovo.growth.oop.ushtrime_northwind_java;
 
+import java.util.ArrayList;
+
 public class Product {
     private int id;
     private String name;
@@ -14,6 +16,8 @@ public class Product {
 
     private Supplier supplier; //nje produkt ka nje supplier
     private Category category; // nje produkt ka vetem nje category
+
+    private ArrayList<OrderDetail> orderDetails;
 
     public Product(int id, String name, int supplierId, int categoryId, int quantityPerUnit, double price, int unitInStock, int unitInOrder, int reorderLevel, boolean discontinued, Supplier supplier, Category category) {
         this.id = id;
@@ -128,5 +132,15 @@ public class Product {
 
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    public ArrayList<OrderDetail> getOrderDetails() {
+        return orderDetails;
+    }
+
+    public void addOrderDetail(OrderDetail detail) {
+        if (this.orderDetails == null)
+            this.orderDetails = new ArrayList<>();
+        this.orderDetails.add(detail);
     }
 }
