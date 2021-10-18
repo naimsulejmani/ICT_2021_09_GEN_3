@@ -2,6 +2,16 @@ package ict.kosovo.growth.oop.polymorphism.final_keyword_in_java;
 
 //nese nuk deshirojme klasa me pas mundesi me u trashegu (mos me pas femij)
 public class Television {
+    public static final int SERIAL_NUMBER;
+
+
+    //static initializer block
+    static {
+        //e kisha inicializu prej file -> kalkulimi, db
+        SERIAL_NUMBER = ((int) Math.random() * Integer.MAX_VALUE);
+    }
+
+
     //java e ka nje rreugll kur perdoret si variabel instance (vepron si readonly ne C#)
 
     //vleren e pare qe e inicializojme ate e merr edhe pastaj vepron si konstante
