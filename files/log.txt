@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-10-20T18:26:58.747187Z</date>
+  <millis>1634754418747</millis>
+  <nanos>187000</nanos>
+  <sequence>0</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>WARNING</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>WARN ABOUT YOU: 0</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.831812Z</date>
+  <millis>1634754418831</millis>
+  <nanos>812000</nanos>
+  <sequence>1</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>SEVERE</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>HELLO I'M KIDDING: 0</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.833248Z</date>
+  <millis>1634754418833</millis>
+  <nanos>248000</nanos>
+  <sequence>2</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>WARNING</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>WARN ABOUT YOU: 1</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.833960Z</date>
+  <millis>1634754418833</millis>
+  <nanos>960000</nanos>
+  <sequence>3</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>SEVERE</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>HELLO I'M KIDDING: 1</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.834578Z</date>
+  <millis>1634754418834</millis>
+  <nanos>578000</nanos>
+  <sequence>4</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>WARNING</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>WARN ABOUT YOU: 2</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.835710Z</date>
+  <millis>1634754418835</millis>
+  <nanos>710000</nanos>
+  <sequence>5</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>SEVERE</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>HELLO I'M KIDDING: 2</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.837703Z</date>
+  <millis>1634754418837</millis>
+  <nanos>703000</nanos>
+  <sequence>6</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>WARNING</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>WARN ABOUT YOU: 3</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.838986Z</date>
+  <millis>1634754418838</millis>
+  <nanos>986000</nanos>
+  <sequence>7</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>SEVERE</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>HELLO I'M KIDDING: 3</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.839851Z</date>
+  <millis>1634754418839</millis>
+  <nanos>851000</nanos>
+  <sequence>8</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>WARNING</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>WARN ABOUT YOU: 4</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.840716Z</date>
+  <millis>1634754418840</millis>
+  <nanos>716000</nanos>
+  <sequence>9</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>SEVERE</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>HELLO I'M KIDDING: 4</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.841581Z</date>
+  <millis>1634754418841</millis>
+  <nanos>581000</nanos>
+  <sequence>10</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>WARNING</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>WARN ABOUT YOU: 5</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.842933Z</date>
+  <millis>1634754418842</millis>
+  <nanos>933000</nanos>
+  <sequence>11</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>SEVERE</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>HELLO I'M KIDDING: 5</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.843457Z</date>
+  <millis>1634754418843</millis>
+  <nanos>457000</nanos>
+  <sequence>12</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>WARNING</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>WARN ABOUT YOU: 6</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.845633Z</date>
+  <millis>1634754418845</millis>
+  <nanos>633000</nanos>
+  <sequence>13</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>SEVERE</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>HELLO I'M KIDDING: 6</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.846504Z</date>
+  <millis>1634754418846</millis>
+  <nanos>504000</nanos>
+  <sequence>14</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>WARNING</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>WARN ABOUT YOU: 7</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.847236Z</date>
+  <millis>1634754418847</millis>
+  <nanos>236000</nanos>
+  <sequence>15</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>SEVERE</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>HELLO I'M KIDDING: 7</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.849150Z</date>
+  <millis>1634754418849</millis>
+  <nanos>150000</nanos>
+  <sequence>16</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>WARNING</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>WARN ABOUT YOU: 8</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.849729Z</date>
+  <millis>1634754418849</millis>
+  <nanos>729000</nanos>
+  <sequence>17</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>SEVERE</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>HELLO I'M KIDDING: 8</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.850040Z</date>
+  <millis>1634754418850</millis>
+  <nanos>40000</nanos>
+  <sequence>18</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>WARNING</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>WARN ABOUT YOU: 9</message>
+</record>
+<record>
+  <date>2021-10-20T18:26:58.850348Z</date>
+  <millis>1634754418850</millis>
+  <nanos>348000</nanos>
+  <sequence>19</sequence>
+  <logger>ict.kosovo.growth.oop.logger_api.TestFileHandler</logger>
+  <level>SEVERE</level>
+  <class>ict.kosovo.growth.oop.logger_api.TestFileHandler</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>HELLO I'M KIDDING: 9</message>
+</record>
+</log>
