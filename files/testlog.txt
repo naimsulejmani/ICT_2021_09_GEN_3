@@ -1,0 +1,18 @@
+Oct 20, 2021 8:42:01 PM ict.kosovo.growth.oop.logger_api.loggin_sample.LogTest main
+SEVERE: E RUAN KETE
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-10-20T18:43:04.761165Z</date>
+  <millis>1634755384761</millis>
+  <nanos>165000</nanos>
+  <sequence>2</sequence>
+  <logger>TEST_LOG</logger>
+  <level>SEVERE</level>
+  <class>ict.kosovo.growth.oop.logger_api.loggin_sample.LogTest</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>E RUAN KETE</message>
+</record>
+</log>

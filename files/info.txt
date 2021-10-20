@@ -1,0 +1,4 @@
+Oct 20, 2021 8:42:01 PM ict.kosovo.growth.oop.logger_api.loggin_sample.LogTest main
+SEVERE: SEVER LOG
+Oct 20, 2021 8:43:04 PM ict.kosovo.growth.oop.logger_api.loggin_sample.LogTest main
+SEVERE: SEVER LOG
