@@ -1,5 +1,7 @@
 package ict.kosovo.growth.labs.models;
 
+import ict.kosovo.growth.labs.exceptions.ExpiredProductDateException;
+import ict.kosovo.growth.labs.exceptions.NegativePriceException;
 import ict.kosovo.growth.oop.polymorphism.covariant_type.A;
 
 import java.math.BigDecimal;
@@ -18,17 +20,19 @@ public abstract class Product {
     private List<Review> reviews;//1 produkt ka zero ose me shume reviews
 
     public Product(int id, String name, String description, BigDecimal price, LocalDate bestBefore, Rating rating
-            , List<Review> reviews) {
+            , List<Review> reviews) throws NegativePriceException, ExpiredProductDateException {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.price = price;
-        this.bestBefore = bestBefore;
+        //this.price = price;
+        setPrice(price);
+        //this.bestBefore = bestBefore;
+        setBestBefore(bestBefore);
         this.rating = rating;
         this.reviews = reviews;
     }
 
-    public Product(int id, String name, BigDecimal price) {
+    public Product(int id, String name, BigDecimal price) throws NegativePriceException, ExpiredProductDateException {
         this(id, name, null, price, LocalDate.now(), Rating.NO_STAR, new ArrayList<>());
     }
 
@@ -56,9 +60,10 @@ public abstract class Product {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(BigDecimal price) throws NegativePriceException {
         if (price.compareTo(BigDecimal.ZERO) < 0) {
-            this.price = BigDecimal.ZERO;
+            //this.price = BigDecimal.ZERO;
+            throw new NegativePriceException("Nuk lejohet cmimi negative per produkte!", price.doubleValue());
             //throw error
         } else
             this.price = price;
@@ -69,11 +74,11 @@ public abstract class Product {
     }
 
     //nuk guxon me qene e dates se djeshme
-    public void setBestBefore(LocalDate bestBefore) {
+    public void setBestBefore(LocalDate bestBefore) throws ExpiredProductDateException {
         if (bestBefore.isBefore(LocalDate.now())) {
             //ketu gjuaje nje gabim
             System.out.println("Nuk lejohet te regjistrohen ne sistem produktet me afat te skaduar");
-            return;
+            throw new ExpiredProductDateException("Nuk lejohet te regjistrohen ne sistem produktet me afat te skaduar!");
         }
         this.bestBefore = bestBefore;
     }
