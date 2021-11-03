@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Product {
+public abstract class Product implements Rateable {
     private int id;
     private String name;
     private String description;
@@ -63,7 +63,7 @@ public abstract class Product {
     public void setPrice(BigDecimal price) throws NegativePriceException {
         if (price.compareTo(BigDecimal.ZERO) < 0) {
             //this.price = BigDecimal.ZERO;
-            throw new NegativePriceException("Nuk lejohet cmimi negative per produkte!", price.doubleValue());
+            throw new NegativePriceException("NegativePriceException", price.doubleValue());
             //throw error
         } else
             this.price = price;
@@ -78,14 +78,14 @@ public abstract class Product {
         if (bestBefore.isBefore(LocalDate.now())) {
             //ketu gjuaje nje gabim
             System.out.println("Nuk lejohet te regjistrohen ne sistem produktet me afat te skaduar");
-            throw new ExpiredProductDateException("Nuk lejohet te regjistrohen ne sistem produktet me afat te skaduar!");
+            throw new ExpiredProductDateException("ExpiredProductDateException");
         }
         this.bestBefore = bestBefore;
     }
 
     //0..5
     public Rating getRating() {
-        if (reviews.isEmpty()) return Rating.NO_STAR;
+        if (reviews==null || reviews.isEmpty()) return Rating.NO_STAR;
         double sum = 0;
         for (Review review : reviews) {
             sum += review.getRating().getValue();
