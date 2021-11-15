@@ -15,7 +15,7 @@ ToObjectable<Author>{
 
     @Override
     public boolean add(Author item) {
-        String query = "INSERT INTO dbo.Author(Name, Surname, IsActive) VALUES (?, ?, ?);";
+        String query = "INSERT INTO Author(Name, Surname, IsActive) VALUES (?, ?, ?);";
         try(
             Connection connection = getConnection();
             PreparedStatement statement = connection.prepareStatement(query);
@@ -37,7 +37,7 @@ ToObjectable<Author>{
 
     @Override
     public boolean update(Author item) {
-        String query = "UPDATE dbo.Author SET Name=?, Surname=?, IsActive=? WHERE Id=?";
+        String query = "UPDATE Author SET Name=?, Surname=?, IsActive=? WHERE Id=?";
         try(
                 Connection connection = getConnection();
                 PreparedStatement statement = connection.prepareStatement(query);
@@ -64,7 +64,7 @@ ToObjectable<Author>{
 
     @Override
     public boolean deleteById(Integer key) {
-        String query = "DELETE FROM dbo.Author WHERE Id=?";
+        String query = "DELETE FROM Author WHERE Id=?";
         try(
                 Connection connection = getConnection();
                 PreparedStatement statement = connection.prepareStatement(query);
@@ -83,7 +83,7 @@ ToObjectable<Author>{
 
     @Override
     public Author getById(Integer key) {
-        String query = "SELECT * FROM dbo.Author WHERE Id=?";
+        String query = "SELECT * FROM Author WHERE Id=?";
         try(
                 Connection connection = getConnection();
                 PreparedStatement statement = connection.prepareStatement(query);
@@ -113,7 +113,7 @@ ToObjectable<Author>{
 
     @Override
     public List<Author> getAll() {
-        String query = "SELECT * FROM dbo.Author";
+        String query = "SELECT * FROM Author";
         try(
                 Connection connection = getConnection();
                 PreparedStatement statement = connection.prepareStatement(query);

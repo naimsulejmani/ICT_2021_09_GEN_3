@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DbHelper {
     private Connection connection;
-    private String connectionUrl =  "jdbc:sqlserver://127.0.0.1:1433;databaseName=Biblioteka;user=ictuser;password=ictuser";;
+    private String connectionUrl =  "jdbc:sqlserver://127.0.0.1:1433;databaseName=Biblioteka;user=ictuser;password=ictuser";
 
     public Connection getConnection() throws SQLException {
         if (this.connection == null || this.connection.isClosed()) {
