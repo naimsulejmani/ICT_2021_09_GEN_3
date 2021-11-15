@@ -1,5 +1,7 @@
 package ict.kosovo.growth.labs.models;
 
+import ict.kosovo.growth.labs.exceptions.UsernameMissingException;
+
 import java.time.LocalDateTime;
 
 public class Review {
@@ -14,7 +16,8 @@ public class Review {
     public Review(String comment, Rating rating, String username, LocalDateTime reviewDate) {
         this.comment = comment;
         this.rating = rating;
-        this.username = username;
+        this.username = username ==null ? "anonymous" : username;
+        //setUsername(username)
         this.reviewDate = reviewDate;
     }
 
@@ -40,6 +43,10 @@ public class Review {
 
     public String getUsername() {
         return username;
+    }
+    private void setUsername(String username) throws UsernameMissingException {
+        if(username==null || username.isEmpty() || username.isBlank()) throw new UsernameMissingException();
+        this.username=username;
     }
 
     public LocalDateTime getReviewDate() {
