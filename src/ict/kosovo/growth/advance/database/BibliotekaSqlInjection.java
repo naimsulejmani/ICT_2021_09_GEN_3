@@ -2,31 +2,23 @@ package ict.kosovo.growth.advance.database;
 
 import java.sql.*;
 
-public class BibliotekaExampleStatementSelect {
+public class BibliotekaSqlInjection {
     public static void main(String[] args) {
         String connectionUrl = "jdbc:sqlserver://127.0.0.1:1433;databaseName=Biblioteka;user=ictuser;password=ictuser";
 
         try {
             Connection connection = DriverManager.getConnection(connectionUrl);
             System.out.println("Urime u konektuat krijuat sesion me serverin!");
-            String query = "SELECT * FROM dbo.Author;";
+            String id = "1;DROP TABLE TEST";
+            String query = "SELECT * FROM dbo.Author WHERE id = "+id;
 
             Statement statement = connection.createStatement();
 
             ResultSet resultSet = statement.executeQuery(query);
             while(resultSet.next()) {
                 System.out.printf("%30s | %30s | %10b%n",
-                        resultSet.getString("Name"),
-                        resultSet.getString("Surname"),
+                        resultSet.getString("Name"),resultSet.getString("Surname"),
                         resultSet.getBoolean("IsActive")
-                        );
-            }
-
-            while(resultSet.next()) {
-                System.out.printf("%30s | %30s | %10b%n",
-                        resultSet.getObject(1, String.class),
-                        resultSet.getObject("Surname",String.class),
-                        resultSet.getObject("IsActive",Boolean.class)
                 );
             }
 
@@ -36,6 +28,5 @@ public class BibliotekaExampleStatementSelect {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
     }
 }

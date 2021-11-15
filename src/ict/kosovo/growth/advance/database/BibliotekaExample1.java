@@ -16,11 +16,16 @@ public class BibliotekaExample1 {
             System.out.println("Urime u konektuat krijuat sesion me serverin!");
             String insertQuery = "INSERT INTO dbo.Author (Name,Surname,IsActive) VALUES ('C','D',1)";
 
+            connection.setAutoCommit(false);
             Statement statement = connection.createStatement();
+
 
             int rowAffected = statement.executeUpdate(insertQuery);//CREATE, INSERT< UPDATE, DELETE< ALTER< DROP ...
             System.out.printf("(%d row affected)%n", rowAffected);
 
+            if(rowAffected<=0) connection.rollback();
+
+            connection.commit();
             statement.close();
             connection.close();
 
