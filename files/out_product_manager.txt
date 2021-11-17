@@ -1,0 +1,18 @@
+Nov 03, 2021 8:36:36 PM ict.kosovo.growth.labs.managers.ProductManager createFood
+WARNING: Negative pricing for products is not allowed! -0.4
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-11-03T19:37:49.626318Z</date>
+  <millis>1635968269626</millis>
+  <nanos>318000</nanos>
+  <sequence>0</sequence>
+  <logger>PRODUCT_MANAGER_LOG</logger>
+  <level>WARNING</level>
+  <class>ict.kosovo.growth.labs.managers.ProductManager</class>
+  <method>createFood</method>
+  <thread>1</thread>
+  <message>Negative pricing for products is not allowed! -0.4</message>
+</record>
+</log>
